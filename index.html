@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <div>
+        No.33 <br>
+        （cssのみ）<br>
+        2つのアニメーションを組み合わせている。<br>
+        <br>
+        ①羽ばたく表現・・・鳥の画像を複数用意し、統一のアニメーション（opacityアニメーション）を適用。その上で、各画像にanimation-delayのみずらしたものを設定し直して、それぞれの画像の透明度が100%になるタイミングをずらす。<br><br>
+
+        ②画面を横切る表現・・・鳥の画像を囲んだdiv要素に対し、transformのアニメーションを適用。<br>
+        注意点：鳥の画像と、それを囲むボックス（②のアニメーションを適用しているdiv）にはposition:absoluteを設定する。そのため、鳥の画像と②のボックスの間にもう一つdiv要素を入れ、そのdiv要素にposition:relativeを設定している。
+
+    </div>
+    <div class="wrapper">
+        <div class=bird_img>
+            <img class="b01 bird" src="images/b1_illust1.png" alt="鳥">
+            <img class="b02 bird" src="images/b2_illust2.png" alt="鳥">
+            <img class="b03 bird" src="images/b3_illust3.png" alt="鳥">
+            <img class="b04 bird" src="images/b4_illust4.png" alt="鳥">
+            <img class="b05 bird" src="images/b5_illust5.png" alt="鳥">
+            <img class="b06 bird" src="images/b6_illust5.png" alt="鳥">
+            <img class="b07 bird" src="images/b7_illust4.png" alt="鳥">
+            <img class="b08 bird" src="images/b8_illust3.png" alt="鳥">
+            <img class="b09 bird" src="images/b9_illust2.png" alt="鳥">
+            <img class="b010 bird" src="images/b10_illust1.png" alt="鳥">
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
