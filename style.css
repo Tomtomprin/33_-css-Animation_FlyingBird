@@ -1,0 +1,136 @@
+body {
+    background-color: rgba(247, 255, 183, 0.375);
+}
+
+.bird_img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+
+.wrapper {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation: move;
+    animation-fill-mode: forwards;
+    animation-duration: 40s;
+    animation-direction: normal;
+    z-index: -1;
+}
+
+@keyframes move {
+    from {
+        transform: translate(130%, 200%);
+    }
+
+    to {
+        transform: translate(-2000%, 0%);
+    }
+}
+
+
+
+
+.bird {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+
+    animation-name: fly;
+
+    animation-fill-mode: none;
+    /*▲アニメーションの開始と終了時*/
+    /*none→指定なし。初期値。*/
+    /*forwards→元の状態に戻らずアニメーション最後の状態を維持*/
+    /*backwards→アニメーションの最初の状態に戻る*/
+    /*both→backwardsとforwardsの両方の状態を適用*/
+    animation-duration: 0.9s;
+    /*▲アニメーション変化時間*/
+    animation-iteration-count: infinite;
+    /*▲ループさせる*/
+    animation-timing-function: ease;
+    /*▲進行具合*/
+    /*ease→初期値：開始時と終了時が緩やかに変化*/
+    /*ease-in→開始時は緩やかに変化、終了に近づくと早く変化。ease-outは逆*/
+    /*ease-in-out→開始時と終了時は、かなり緩やかに変化*/
+    /*linear→開始から終了まで一定に変化・・・など。他にも、複数あり*/
+
+    /* animation-delay: 0.5s; */
+
+    /*▲アニメーションの開始を遅らせる*/
+    animation-direction: normal;
+    /*アニメーションの再生の向きを順方向、逆方向、前後反転のいずれにするかを決める*/
+    /*normal→初期値：普通方向の再生で動きを繰り返す*/
+    /*reverse→逆方向の再生で動きを繰り返す*/
+    /*alternate→奇数回では普通方向、偶数回では逆方向の再生で動きを繰り返す*/
+    /*alternate-reverse→毎回逆方向の再生、奇数回では逆方向、偶数回では普通方向*/
+}
+
+.b02 {
+    animation-delay: 0.1s;
+}
+
+.b03 {
+    animation-delay: 0.2s;
+}
+
+.b04 {
+    animation-delay: 0.3s;
+}
+
+.b05 {
+    animation-delay: 0.4s;
+}
+
+.b06 {
+    animation-delay: 0.5s;
+}
+
+.b07 {
+    animation-delay: 0.6s;
+}
+
+.b08 {
+    animation-delay: 0.7s;
+}
+
+.b09 {
+    animation-delay: 0.8s;
+}
+
+.b10 {
+    animation-delay: 0.9s;
+}
+
+
+
+
+
+@keyframes fly {
+    0% {
+        opacity: 0%;
+    }
+
+    2% {
+        opacity: 100%;
+    }
+
+    10% {
+        opacity: 100%;
+    }
+
+
+    20% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
